@@ -1,0 +1,197 @@
+/* ========== MAIN SECTION ========== */
+.programs-section{
+  padding:100px 8%;
+  background:#feeaf4;
+  width:100%;
+}
+
+/* titles */
+.programs-subtitle{
+  text-align:center;
+  font-weight:700;
+  color:#e30070;
+  font-size:20px;
+  letter-spacing:1px;
+}
+
+.programs-title{
+  text-align:center;
+  font-size:28px;
+  font-weight:700;
+  margin-top:8px;
+  margin-bottom:70px;
+}
+
+
+
+/* ========== TOP SECTION NEW DESIGN ========== */
+.programs-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:60px;
+  margin-bottom:90px;
+}
+
+/* left text box */
+.programs-info{
+  background:#fff;
+  padding:50px 45px;
+  border-radius:12px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.08);
+  flex:1;
+  border-left:5px solid #e30070;
+}
+
+.programs-info-header{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:14px;
+}
+
+.square{
+  width:13px;
+  height:13px;
+  background:#e30070;
+  border-radius:3px;
+}
+
+.programs-info-text{
+  font-size:17px;
+  line-height:1.7;
+  color:#333;
+  margin-bottom:25px;
+  max-width:450px;
+}
+
+/* learn button */
+.programs-learn-btn{
+  padding:12px 24px;
+  background:#111;
+  border:none;
+  border-radius:30px;
+  color:white;
+  font-weight:600;
+  cursor:pointer;
+}
+
+.programs-learn-btn:hover{
+  opacity:.9;
+}
+
+/* right image */
+.programs-image-wrapper{
+  position:relative;
+  width:48%;
+
+}
+
+.programs-img{
+  width:100%;
+  border-radius:12px;
+  object-fit:cover;
+  height: 250px;
+}
+
+/* decorative dot */
+.pink-dot{
+  width:70px;
+  height:70px;
+  background:#ff5aa8;
+  opacity:0.4;
+  border-radius:50%;
+  position:absolute;
+  right:-20px;
+  top:-20px;
+  z-index:-1;
+}
+
+
+
+/* ========== PROGRAM CARDS BELOW ========== */
+.programs-cards{
+  display:flex;
+  gap:30px;
+}
+
+/* each card */
+.program-card{
+  background:#fff;
+  padding:0;
+  border-radius:12px;
+  border:1px solid #eee;
+  flex:1;
+  box-shadow:0 6px 16px rgba(0,0,0,0.05);
+  overflow:hidden;
+}
+
+/* pink heading */
+.program-card h5{
+  background:#e30070;
+  color:white;
+  font-size:18px;
+  font-weight:700;
+  padding:14px 22px;
+}
+
+.program-card p{
+  padding:20px 22px;
+  color:#333;
+  line-height:1.6;
+  font-size:15px;
+}
+
+/* list */
+.program-card ul{
+  padding:0 22px;
+  margin-bottom:18px;
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+
+.program-card ul li{
+  list-style:none;
+}
+
+/* button */
+.program-card button{
+  margin:0 22px 25px 22px;
+  padding:12px 22px;
+  background:#111;
+  border:none;
+  border-radius:30px;
+  color:white;
+  font-weight:600;
+   margin-left: auto;
+  margin-right: auto;
+  display: block;
+  cursor:pointer;
+ 
+}
+
+
+
+/* ========== RESPONSIVE ========== */
+@media(max-width:1000px){
+  .programs-top{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .programs-image-wrapper{
+    width:100%;
+    display: none;
+  }
+
+  .programs-info{
+    padding:30px 25px;
+  }
+}
+
+@media(max-width:900px){
+  .programs-cards{
+    flex-direction:column;
+  }
+}
